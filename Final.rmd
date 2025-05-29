@@ -186,3 +186,21 @@ fisher.test(table1)
 The p-value from the chi-squared test is 0.0000000001414 which is less than 0.05 so, we reject the null hypothesis. Pretty much vaccine has not much effectiveness.
 
 # Overall Results and Conclusions
+
+##Males     
+
+Based on the data we got, it looks like the vaccine actually works for guys. The table shows that only 26.2% of men who got the vaccine ended up getting covid, while 73.8% of the men who got the placebo caught it. That’s a big difference. The p-value was like 0.00000000000000022, which is way smaller than 0.05, so yeah—we reject the null. That means there’s solid evidence the vaccine does something. The odds came out to around 2.8 times more effective, so we can say the vaccine is pretty reliable for preventing covid in men.  
+
+
+##Females   
+
+From the data we got, we can say the vaccine works for women too. The table shows that 35.07% of the women who got covid had the vaccine, and 64.93% were the ones who got the placebo. That’s a big enough gap. The p-value was 0.00000001914, which is definitely less than 0.05, so we reject the null again. That means there’s strong evidence the vaccine helps. The odds came out to like 1.86, so yeah, we can say the vaccine seems to help prevent covid in females too.     
+
+
+##LGBTQ    
+
+Looking at the data we got, it shows the vaccine works pretty well for LGBTQ folks too. The table shows that only 20% of LGBTQ people who got covid had the vaccine, while 80% of the ones who got the placebo ended up with it. So yeah, that’s a big difference and shows the vaccine is doing its job. The p-value was 0.000002266, which is way under 0.05, so we reject the null again. That means there’s strong evidence here. The odds ratio from Fisher’s exact test came out to 4.27, which basically means the vaccine has over a 4 times better chance at helping prevent covid in LGBTQ people. So yeah, it’s pretty safe to say the vaccine works for this group too.
+
+##Drug Users  
+
+From the data we got, it looks like the vaccine doesn’t really work well for people who use drugs. The table shows that 91.67% of drug users who got covid had the vaccine, and only 8.33% got the placebo, which kinda flips everything. The p-value was 0.0000000001414, so yeah, we reject the null again, but this time it’s showing something different. The odds ratio from Fisher’s test was 0.087, which means the vaccine is actually way less likely to help drug users. So based on this, we can say the vaccine probably won’t be that effective at preventing covid in this group.
