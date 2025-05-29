@@ -56,6 +56,17 @@ colPerc(table1)
 
 The table shows 26.20% of men received the vaccine and had covid19 while 73.80% of men received the placebo got covid 19.
 
+##Inferential Results  
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+So, the p-value from the test is 0.00000000000000022, which is less than 0.05, we have to reject the null hypothesis. The odds ratio from the fisher's exact test was 2.815 and this has a 2.8 chance of being effective in men
+
+
+
 ## Females
 
 
