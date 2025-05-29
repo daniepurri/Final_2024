@@ -26,6 +26,25 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+Is the Covid vaccine effetive in males?
+
+$H_0$: The new preventative vaccine (Covid921) does not exhibit any effectivness on males.  
+$H_A$: The new preventative vaccine (Covid921) does exhibit effectivness on male.  
+
+Cat~Cat
+
+```{r}
+Males = FinalData[FinalData$sex=='M',]
+head(Males)
+```
+
+## Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=Males)
+barchartGC(~infected + treatment,data=Males, type="percent")
+```
+This graph shows that the vaccine is effective in preventing covid19 in males because the amount of males who received the vaccine and contracted covid19 was lower than the men who had received the placebo.
 
 ## Females
 
