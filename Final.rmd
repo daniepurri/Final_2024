@@ -176,4 +176,13 @@ colPerc(table1)
 
 The table shows that 91.67% of drug users that got covid19 also got the vaccine. So this shows that the vaccine is not relly good and effective with drugs
 
+##Inferential Results      
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the chi-squared test is 0.0000000001414 which is less than 0.05 so, we reject the null hypothesis. Pretty much vaccine has not much effectiveness.
+
 # Overall Results and Conclusions
