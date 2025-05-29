@@ -129,6 +129,15 @@ barchartGC(~infected + treatment,data=gay, type="percent")
 
 The bar graph shows that the vaccine is good in preventing covid19 in people who are LGBTQ 
 
+##Numerical Results  
+```{r}
+table1 <- xtabs(~infected + treatment, data=gay)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 20% of LGBTQ people that got the vaccine also got covid19. Compared to the LGBTQ people who received the placebo and contracted vaccine which is 80%. This means that the vaccine is good
+
 
 ## Druggies
 
