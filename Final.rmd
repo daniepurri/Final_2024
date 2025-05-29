@@ -110,6 +110,24 @@ The p-value from the test is 0.00000001914 adn is less than 0.05 so, we reject t
 
 ## LGBTQ
 
+##Methods  
+$H_0$ The preventative vaccine does not exhibit its effective in people who are LGBTQ.        
+$H_A$ The preventative vaccine exhibits its effective in people who are LGBTQ.    
+Cat~Cat
+
+```{r}
+gay = FinalData[FinalData$LGBTQ=='gay',]
+head(gay)
+```
+
+##Graphical Results  
+
+```{r}
+barchartGC(~infected + treatment,data=gay)
+barchartGC(~infected + treatment,data=gay, type="percent")
+```
+
+The bar graph shows that the vaccine is good in preventing covid19 in people who are LGBTQ 
 
 
 ## Druggies
