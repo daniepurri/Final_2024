@@ -123,6 +123,23 @@ fisher.test(table1)
 
 The p-value from the test is 0.00000001914 adn is less than 0.05 so, we reject the null hypothesis. The odds ratio from the fisher's exact test is 1.856 which means that there is approximately a 1.86 chance that the vaccine will be effective in women
 
+```{r}
+guysfish <- fisher.test(table1)
+guysfish
+```
+```{r}
+low <- (guysfish$conf.int[1] / (guysfish$conf.int[1] + 1)) * 100
+hi <- (guysfish$conf.int[2] / (guysfish$conf.int[2] + 1)) * 100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The p-value from the Fisher’s test was 1e-08, which is super low, like way under 0.05, so we reject the null again. That means the vaccine is working for females too. The odds ratio is 1.9, which means that gals who got the vaccine were almost 2 times less likely to catch covid compared to the ones who got the placebo.
+
+The confidence interval goes from 1.5 to 2.3, and since that whole range is above 1, it backs up the idea that the vaccine’s actually doing something. So yeah, based on that, I’d say it’s a smart move for females to get the shot too.
+
+
 
 ## LGBTQ
 
