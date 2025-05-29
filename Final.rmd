@@ -98,6 +98,15 @@ colPerc(table1)
 
 The numerical results shows that something close to 35.07% of women that got the vaccine had covid19, but the women who got covid19 and also got the placebo which was 64.93%. Shows that the vaccine is good
 
+##Inferential Results    
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the test is 0.00000001914 adn is less than 0.05 so, we reject the null hypothesis. The odds ratio from the fisher's exact test is 1.856 which means that there is approximately a 1.86 chance that the vaccine will be effective in women
+
 
 ## LGBTQ
 
