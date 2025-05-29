@@ -138,6 +138,15 @@ colPerc(table1)
 
 The table shows that 20% of LGBTQ people that got the vaccine also got covid19. Compared to the LGBTQ people who received the placebo and contracted vaccine which is 80%. This means that the vaccine is good
 
+##Infrential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the test is 0.000002266 which is less than 0.05 so, we reject the null hypothesis. The odds ratio from the fisher's exact test is 4.27 which means that the vaccine has a 4.27 chance of being good.
 
 ## Druggies
 
