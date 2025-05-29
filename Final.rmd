@@ -140,7 +140,6 @@ The p-value from the Fisher’s test was 1e-08, which is super low, like way und
 The confidence interval goes from 1.5 to 2.3, and since that whole range is above 1, it backs up the idea that the vaccine’s actually doing something. So yeah, based on that, I’d say it’s a smart move for females to get the shot too.
 
 
-
 ## LGBTQ
 
 ##Methods  
@@ -217,6 +216,23 @@ fisher.test(table1)
 ```
 
 The p-value from the chi-squared test is 0.0000000001414 which is less than 0.05 so, we reject the null hypothesis. Pretty much vaccine has not much effectiveness.
+
+```{r}
+guysfish <- fisher.test(table1)
+guysfish
+```
+
+```{r}
+low <- (guysfish$conf.int[1] / (guysfish$conf.int[1] + 1)) * 100
+hi <- (guysfish$conf.int[2] / (guysfish$conf.int[2] + 1)) * 100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The p-value here is 1e-08, which is crazy low, so yeah, we reject the null again. That means the odds of getting covid are different depending on if the person took the vaccine or not. The odds ratio is 1.9, so people who got the vaccine were almost twice as likely to stay safe compared to the ones who didn’t.
+
+The 95% confidence interval goes from 1.5 to 2.3, and since it’s all above 1, that just proves the vaccine works for this group. So yeah, it’s pretty clear the vaccine is doing its job here too.
 
 # Overall Results and Conclusions
 
