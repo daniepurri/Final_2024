@@ -65,6 +65,22 @@ fisher.test(table1)
 
 So, the p-value from the test is 0.00000000000000022, which is less than 0.05, we have to reject the null hypothesis. The odds ratio from the fisher's exact test was 2.815 and this has a 2.8 chance of being effective in men
 
+```{r}
+guysfish <- fisher.test(table1)
+guysfish
+```
+
+```{r}
+low <- (guysfish$conf.int[1] / (guysfish$conf.int[1] + 1)) * 100
+hi <- (guysfish$conf.int[2] / (guysfish$conf.int[2] + 1)) * 100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The p-value from the Fisher’s test is like basically zero, so since it’s way less than 0.05, we gotta reject the null. That means the vaccine actually works for guys. The odds ratio is 2.81, so guys who took the vaccine were almost 3 times less likely to get covid compared to the ones who just got the placebo.
+
+Also, the 95% confidence interval goes from 2.21 to 3.61, and since it’s all above 1, that just backs it up even more that the vaccine is doing its job. So yeah, for males, I’d say the vaccine is definitely a good idea.
 
 
 ## Females
